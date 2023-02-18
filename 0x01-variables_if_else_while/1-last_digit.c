@@ -4,9 +4,7 @@
 /**
  * main -Entry
  *
- * this program prints the string Last digit of 629438752 is 2 and is less than 6 and not 0
- * if the n < 6
- * and Last digit of 491506926 is 6 and is greater than 5 if last digit of n is > 5
+ *this program prints the value of n and last digit and compares
  *
  * Return: Always 0 (success)
  */
@@ -24,7 +22,7 @@ int main(void)
 	}
 	else if (last_digit > 5 && last_digit != 0)
 	{
-		printf("Last digit of %d is %d and greater than 5 and not 0\n", n, last_digit);
+		printf("Last digit of %d is %d and is greater than 5 and not 0\n", n, last_digit);
 	}
 	else 
 	{

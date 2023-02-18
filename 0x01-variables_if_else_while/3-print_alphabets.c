@@ -12,14 +12,16 @@ int main(void)
 	int i = 97;
 	int j = 65;
 
-	do
+	while (i <= 122 && j <= 90)
 	{
 		putchar(i);
 		i++;
+	}
+	while ( j <= 90 )
+	{
 		putchar(j);
 		j++;
-		putchar('\n');
 	}
-	while (i <= 122 && j <= 90);
+	putchar('\n');
 	return (0);
 }

@@ -4,7 +4,7 @@
  *
  * this program prints the alphabet in lowercase then uppercase
  *
- * Return: Always 0 (success) 
+ * Return: Always 0 (success)
  *
  */
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 		putchar(i);
 		i++;
 	}
-	while ( j <= 90 )
+	while (j <= 90)
 	{
 		putchar(j);
 		j++;

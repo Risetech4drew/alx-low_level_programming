@@ -6,30 +6,25 @@
  *
  *Return: Always 0 (Success)
  */
-int main(void)
-{
-	int i = 0;
-	int j = 1;
+int main() {
+    int i = 0, j = 1;
 
-	while (i < 9)
-	{
-		j = i+1;
-		while(j < 10)
-		{
+    while (i < 9) {
+        while (j < 10) {
+            putchar(i + '0');
+            putchar(j + '0');
 
-			putchar(i + '0');
-			putchar(j + '0');
-		
-			if (i < 8)
-			{
-			
-			putchar(',');
-			putchar(' ');
-			}
+            if (i < 8) {
+                putchar(',');
+                putchar(' ');
+            }
 
-		j++;
-		}
-		i++;
-	}
-	return (0);
+            j++;
+        }
+
+        i++;
+        j = i + 1;
+    }
+
+    return 0;
 }

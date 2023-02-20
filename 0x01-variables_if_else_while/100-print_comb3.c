@@ -6,27 +6,31 @@
  *
  *Return: Always 0 (Success)
  */
-#include <stdio.h>
-
-int main() 
+int main(void)
 {
-    int i = 0, j;
-    while (i < 9) 
-    	{
-	j = i + 1;
-        while (j < 10)
+	int i = 0;
+	int j = 1;
+
+	while (i < 9)
 	{
-            putchar('0' + i);
-            putchar('0' + j);
-            if (i != 8 || j != 9) 
-	    {
-                putchar(',');
-                putchar(' ');
-            }
-            j++;
-        }
-        i++;
+		while (j < 10)
+		{
+			if (i != j)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i != 8 || j != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			j++;
+		
+		}
+		i++;
+		j = i+1;
 	}
-    	putchar('\n');
-    	return 0;
+	putchar('\n');
+	return (0);
 }

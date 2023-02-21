@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * This program prints '_putchar' to the cosole
+ * 'main' function prints the word '_putchar' to the console using 'putchar' function
  *
  * @Return  0 successful execution
  *

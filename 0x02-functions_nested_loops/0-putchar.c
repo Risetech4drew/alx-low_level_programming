@@ -1,10 +1,11 @@
 #include<stdio.h>
 /**
- * main - Entry point
+ *main - Entry point of the program
  *
- * 'main' function prints the word '_putchar' to the console using 'putchar' function
+ *Descrption: This program prints the word "_putchar" to the console
  *
- * @Return  0 successful execution
+ *
+ *Return: 0 on successful execution
  *
  */
 int main(void)

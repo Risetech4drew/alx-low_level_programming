@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * This program prints _putchar 
+ * This program prints '_putchar' to the cosole
  *
  * Result: Always 0 (success)
  *

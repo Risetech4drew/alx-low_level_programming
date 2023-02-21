@@ -4,7 +4,7 @@
  *
  * This program prints '_putchar' to the cosole
  *
- * Result: Always 0 (success)
+ * @Return  0 successful execution
  *
  */
 int main(void)

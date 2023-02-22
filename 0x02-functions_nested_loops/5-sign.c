@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_sign() - prints the sign of the number
+ * print_sign - prints the sign of a number
  *
- * @c: the number to be checked
+ * @n: the number to be checked
  *
  * Returns 1 andprints '+' if 'n' is greater than zero
  *
@@ -23,7 +23,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else 
+	else
 	{
 		_putchar('-');
 		return (-1);

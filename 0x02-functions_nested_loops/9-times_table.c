@@ -13,11 +13,12 @@
 void times_table(void)
 {
 	int i = 0;
+
 	while (i <= 9)
 	{
-		int j = 0;
+	int j = 0;
 		
-	while (j <= 9)
+		while (j <= 9)
 		{
 			int product = i * j;
 

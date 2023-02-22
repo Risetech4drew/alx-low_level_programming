@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * int print_last_digit - prints last digit of a number to the console
+ * print_last_digit - prints last digit of a number to the console
  *
  * @n: locate the last digit of an integer
  *
- * Return: the last digit of the input integer
+ * Return: The last digit of the input integer
  *
- * Description: function gets the input as integer and returns last digit,
- * if the input is negative, the fuction returns the absolute value of last digit
+ * Description: function gets input as integer and returns last digit,
+ * if the input is negative, fuction returns the absolute value of last digit
  *
  */
 int print_last_digit(int n)

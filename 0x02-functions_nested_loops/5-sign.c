@@ -4,8 +4,11 @@
  *
  * @n: the number to be checked
  *
- *Return: 1 if n is greater than zero, 0 if n is zero, -1 if n is less than zero
- *        and prints the corresponding sign symbol to the standard output
+ *Return: 1 if n is greater than zero, 0 if n is zero, 
+ -
+ *1 if n is less than zero
+ *        
+ *and prints the corresponding sign symbol to the standard output
  *
  *
  */

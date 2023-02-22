@@ -34,14 +34,17 @@ void times_table(void)
 				_putchar(tens + '0');
 				_putchar(digit + '0');
 			}
-			if (j < 9)
+			if (j != 9)
 			{
 			_putchar(',');
 			_putchar(' ');
 			}
 			j++;
 		}
+		if(i != 9)
+		{
 		_putchar('\n');
+		}
 		i++;
 	}
 }

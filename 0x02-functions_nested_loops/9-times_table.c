@@ -21,31 +21,34 @@ void times_table(void)
 		{
 			int product = i * j;
 
-			if (product < 10)
+			if (j == 0)
 			{
+				_putchar('0');
+			}
+			else if (product < 10)
+			{
+				_putchar(' ');
 				_putchar(' ');
 				_putchar(product + '0');
 			}
-			else
-			{
+
+				else 
+				{
 				int tens = product / 10;
 				int digit = product % 10;
 
 				_putchar(tens + '0');
 				_putchar(digit + '0');
+				}
 			}
 			if (j != 9)
 			{
 			_putchar(',');
 			_putchar(' ');
 			}
+
 			j++;
 		}
-		if(i != 9)
-		{
 		_putchar('\n');
-		}
 		i++;
 	}
-}
-

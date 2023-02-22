@@ -4,11 +4,9 @@
  *
  * @n: the number to be checked
  *
- * Returns 1 andprints '+' if 'n' is greater than zero
+ *Return: 1 if n is greater than zero, 0 if n is zero, -1 if n is less than zero
+ *        and prints the corresponding sign symbol to the standard output
  *
- * Returns 0 and prints 0 if 'n' is zero
- *
- * Returns "-1" and prints '-' if n is less than zero
  *
  */
 int print_sign(int n)

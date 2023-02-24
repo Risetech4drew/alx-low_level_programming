@@ -2,7 +2,8 @@
 /**
  * more_numbers - prints numbers from 0 to 14 ten times
  *
- * Description: this function prints 10 times the numbers from 0 to 14
+ * Description: This function prints the numbers from 0 to 14,
+ * followed by a new line. each number printed using _putchar
  *
  * Return: void
  */

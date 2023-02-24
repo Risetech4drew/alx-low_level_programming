@@ -6,7 +6,7 @@
  *
  * Description: this function checks for digit 0 through 9
  *
- * Returns: 1 if charcter is digit and 0 if charcter is not a digit
+ * Return: 1 if the character is a digit, 0 otherwise
  */
 int _isdigit(int c)
 {

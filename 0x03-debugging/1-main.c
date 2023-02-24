@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
+* main - Entry point of the program
 *
-* main - causes an infinite loop
-*
-* Return: 0
+* Description: the main function causes an infinite loop,
+* but the loop is commented out to avoid it.
 *
 */
 int main(void)

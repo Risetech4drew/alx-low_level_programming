@@ -21,13 +21,19 @@ void print_triangle(int size)
 	while (i <= size)
 	{
 		int j = 1;
-		while (j <= i)
+		while (j <= size - i)
 		{
-			_putchar('#');
+			_putchar(' ');
 			j++;
 		}
+		j = 1;
+		while (j <= i)
+		{
+		_putchar('#');
+		j++;
+		}	
 		_putchar('\n');
 		i++;
 	}
+	
 }
-

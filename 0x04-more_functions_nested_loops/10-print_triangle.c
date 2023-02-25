@@ -1,12 +1,15 @@
 #include "main.h"
 /**
- * print_triiangle - prints a triangle, followed by a new line
+ * print_triangle - prints a mirrored triangle of # characters
  *
- * @size: is the size of triangle
+ * @size: is the size to triangle
  *
- * Description: this function prints a triangle based on the the size @size
+ * Description: If size is 0 or less, the function prints nly a newline character,
+ * the function uses a while loop to print the triangle in a mirrored
+ * fashion, with the apex at the left side of the screen and the base
+ * at the right side of the screen.
  *
- * Return: void
+ * Return: void 
  */
 void print_triangle(int size)
 {

@@ -2,7 +2,7 @@
 /**
  * rev_string - a null-terminated string in place
  *
- * @s string to pointer to the string to be reveresed
+ * @s: string to pointer to the string to be reveresed
  *
  * Desrciption: this function reverses the string
  *

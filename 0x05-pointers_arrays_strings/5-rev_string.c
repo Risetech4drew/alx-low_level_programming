@@ -2,7 +2,7 @@
 /**
  * rev_string - a null-terminated string in place
  *
- * @param - string to pointer to the string to be reveresed
+ * @s string to pointer to the string to be reveresed
  *
  * Desrciption: this function reverses the string
  *
@@ -12,7 +12,6 @@ void rev_string(char *s)
 {
 	char *end = s; /* pointer pointing at the end of the string*/
 	char *start = s; /*pointer pointing at the start of the string*/
-	
 	/*fund the end of the string*/
 	while (*end != '\0')
 	{

@@ -1,5 +1,4 @@
 #include "main.h"
-#define MAX_LEN 1000
 /**
  * leet - encodes string into 1337
  *
@@ -10,7 +9,7 @@
 char *leet(char *s)
 {
 	char *leetChars[] = {"a", "A", "e", "E", "o", "O", "t", "T", "i", "L"};
-	char *encoder[] = {"4", "3", "3", "7", "7", "1"};
+	char *encoder[] = {"4", "4", "3", "3", "0", "0", "7", "7", "1", "1", "1"};
 	int i = 0, j;
 
 	while (s[i] != '\0')

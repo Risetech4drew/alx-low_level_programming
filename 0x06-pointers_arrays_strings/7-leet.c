@@ -9,34 +9,22 @@
  */
 char *leet(char *s)
 {
-	int i = 0;
+	char *leetChars[] = {"a", "A", "e", "E", "o", "O", "t", "T", "i", "L"};
+	char *encoder[] = {"4", "3", "3", "7", "7", "1"};
+	int i = 0, j;
 
 	while (s[i] != '\0')
 	{
+		j = 0;
 
-		if (s[i] == 'a' || s[i] == 'A')
+		while (j < 10)
 		{
-			s[i] = '4';
-		}
-		else if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		else if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		else if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		else if (s[i] == 'i' || s[i] == 'L')
-		{
-			s[i] = 1;
-		}
-		else
-		{
-			s[i] = s[i];
+			if (s[i] == *leetChars[j])
+			{
+				*(s + i) = *(encoder[j]);
+				break;
+			}
+			j++;
 		}
 		i++;
 	}

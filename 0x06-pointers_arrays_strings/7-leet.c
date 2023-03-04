@@ -8,15 +8,15 @@
  */
 char *leet(char *s)
 {
-	char leetChars[] = "aAeEoOtTiL";
-	char leetCodes[] = "4433007711";
+	char leetChars[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char leetCodes[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
 	int i = 0, j;
 
 	while (s[i] != '\0')
 	{
 		j = 0;
-		while (leetChars[j] != '\0')
+		while (j < 10)
 		{
 			if (s[i] == leetChars[j])
 			{

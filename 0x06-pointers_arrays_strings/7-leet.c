@@ -11,12 +11,11 @@ char *leet(char *s)
 	char leetChars[] = "aAeEoOtTiL";
 	char leetCodes[] = "44330o7711";
 
-	int i = 0;
+	int i = 0, j;
 
 	while (s[i] != '\0')
 	{
-		int j = 0;
-		
+		j = 0;
 		while (leetChars[j] != '\0')
 		{
 			if (s[i] == leetChars[j])

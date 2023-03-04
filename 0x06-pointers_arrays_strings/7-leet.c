@@ -8,18 +8,20 @@
  */
 char *leet(char *s)
 {
-	char *leetEncoder = "aAeEoOtTiL4433007711";
-	int i = 0, j;
+	char leetChars[] = "aAeEoOtTiL";
+	char leetCodes[] = "4 3 0 7 1";
+
+	int i = 0;
 
 	while (s[i] != '\0')
 	{
-		j = 0;
-
-		while (j < 10)
+		int j = 0;
+		
+		while (leetChars[j] != '\0')
 		{
-			if (s[i] == leetEncoder[j])
+			if(s[i] == leetChars[j])
 			{
-				s[i] = leetEncoder[j + 10];
+				s[i] = leetCodes[j];
 				break;
 			}
 			j++;

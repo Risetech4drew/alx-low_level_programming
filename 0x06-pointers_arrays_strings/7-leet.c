@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	char leetChars[] = "aAeEoOtTiL";
-	char leetCodes[] = "4 3 0 7 1";
+	char leetCodes[] = "44330o7711";
 
 	int i = 0;
 
@@ -19,7 +19,7 @@ char *leet(char *s)
 		
 		while (leetChars[j] != '\0')
 		{
-			if(s[i] == leetChars[j])
+			if (s[i] == leetChars[j])
 			{
 				s[i] = leetCodes[j];
 				break;

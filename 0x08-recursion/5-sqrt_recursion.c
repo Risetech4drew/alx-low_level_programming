@@ -46,10 +46,13 @@ int sqrt_helper(int n, int low, int high)
 		return (mid);
 	}
 	/*search lower half if condition is true*/
-	if (mid * mid > n)
+	else if (mid * mid > n)
 	{
 		return (sqrt_helper(n, low, mid - 1));
 	}
 	/*searching the upper half if the above condition fails*/
+	else
+	{
 	return (sqrt_helper(n, mid + 1, high));
+	}
 }

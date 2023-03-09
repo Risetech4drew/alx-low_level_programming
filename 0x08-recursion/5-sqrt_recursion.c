@@ -12,7 +12,7 @@
  * Return: thesquare root of a given number, or -1 if n is than 0
  *
  */
-long sqrt_helper(long n, long low, long high);
+int sqrt_helper(long n, long low, long high);
 int _sqrt_recursion(int n)
 {
 	/*checks n is valid input*/
@@ -20,19 +20,19 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (sqrt_helper((long)n, 0, (long)n));
+	return sqrt_helper(n, 0, n);
 }
 /**
  * sqrt_helper - performs a binary search to find the square of root n
- * @n: the number to calculate its square root
+ * @n: the number to calculate its `square root
  * @low: the initial point set to 0
  * @high: equal to n
  *
  * Return: square root of the given number, or -1 if low is greater than high
  */
-long sqrt_helper(long n, long low, long high)
+int sqrt_helper(long n, long low, long high)
 {
-	int mid;
+	long mid;
 
 	if (low > high)
 	{

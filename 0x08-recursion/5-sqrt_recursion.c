@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return sqrt_helper(n, 0, n);
+	return (sqrt_helper(n, 0, n));
 }
 /**
  * sqrt_helper - performs a binary search to find the square of root n

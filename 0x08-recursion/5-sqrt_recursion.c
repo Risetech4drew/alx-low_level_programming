@@ -12,7 +12,7 @@
  * Return: thesquare root of a given number, or -1 if n is than 0
  *
  */
-int sqrt_helper(int n, int low, int high);
+long sqrt_helper(long n, long low, long high);
 int _sqrt_recursion(int n)
 {
 	/*checks n is valid input*/
@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (sqrt_helper(n, 0, n));
+	return (sqrt_helper((long)n, 0, (long)n));
 }
 /**
  * sqrt_helper - performs a binary search to find the square of root n
@@ -30,7 +30,7 @@ int _sqrt_recursion(int n)
  *
  * Return: square root of the given number, or -1 if low is greater than high
  */
-int sqrt_helper(int n, int low, int high)
+long sqrt_helper(long n, long low, long high)
 {
 	int mid;
 

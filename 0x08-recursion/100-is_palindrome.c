@@ -1,6 +1,12 @@
 #include "main.h"
 int is_palindrome_helper(char *s, int start, int end);
 int string_length(char *s);
+/**
+ * string_length - returns the length of the string
+ * @s: the string to return its length
+ *
+ * Return: lenth of the string as an integer
+ */
 int string_length(char *s)
 {
 	if (*s == '\0')
@@ -12,9 +18,9 @@ int string_length(char *s)
 			return (1 + string_length(s + 1));
 		}
 }
-/* is_palindrome_helper- recursive heler function to check if a string
+/**
+ * is_palindrome_helper- recursive heler function to check if a string
  * is palindrome
- * 
  * @s: input string
  * @start: the index of the first character to compare
  * @end: index of the last character to compare
@@ -40,7 +46,8 @@ int is_palindrome_helper(char *s, int start, int end)
 	return (0);
 	}
 }
-/* is_palindrome - checks is string is palindrome
+/**
+ * is_palindrome - checks is string is palindrome
  *
  * @s: the input string
  *
@@ -53,5 +60,6 @@ int is_palindrome_helper(char *s, int start, int end)
 int is_palindrome(char *s)
 {
 	int len = string_length(s);
+
 	return (is_palindrome_helper(s, 0, len - 1));
 }

@@ -4,7 +4,7 @@
  * main - prints the number of arguments passed
  *
  * @argc: argument counter
- * @argv: argumnet vector 
+ * @argv: argumnet vector
  *
  * Return: number of argumnets
  */
